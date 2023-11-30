@@ -4,15 +4,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fokus-Jugendhilfe</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #00a79d;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: rgba(238, 139, 139, 0.705);
+    }
+
+    .table-container {
+      margin-top: 10px;
+      border-top: 2px solid rgba(238, 139, 139, 0.705);
+      padding-top: 10px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .cell {
+      width: calc(48% - 5px); 
+      border-style: solid;
+      border-color: rgba(238, 139, 139, 0.705);
+      border-radius: 8px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    #welcome {
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      align-self: flex-start;
+    }
+    #picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+    }
+    #capacity {
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      align-self: flex-start; 
+    }
+    #monthly {
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      align-self: flex-start; 
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 65px;
+    }
+
+    p {
+      font-size: larger;
+      line-height: 2.5;
+      text-align: center;
+    }
+
+    p2 {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+
+    th {
+      padding: 10px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .container {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .cell {
+        width: 100%;
+      }
+    }
+
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Schöne Feiertage!</h1>
-    <p>Liebe Partner,</p>
-    <p>Die Fokus-Jugendhilfe wünscht euch schöne Feiertage mit euren Familien und Freunden.</p>
-    <img src="Simba_Weihnachten.jpg" alt="Hund mit Nikolausmütze">
-    <p>Möchtest du mehr über Fokus-Jugendhilfe erfahren? Klicke <a href="https://www.fokusjugendhilfe-bayreuth.de">hier</a>.</p>
+    <h1>Fokus Newsletter</h1>
+    
+    <div class="table-container">
+      <div class="row">
+        <div id="welcome" class="cell">
+          <p>Willkommen zum Fokus Newsletter</p>
+          <p2>Wir freuen uns sehr euch zum Fokus Newsletter begrüßen zu dürfen. <br> Hier stellen wir euch monatlich die neuesten Informationen der Fokus-Jugendhilfe vor.</p2>
+          <!-- Unterschrift einfügen -->
+          <!-- Logo -->
+          <img src="C:\Users\Oli\Desktop\logo3.jpg" alt="Fokus2" style="max-width: 100%; height: auto">
+        </div>
+        <div id="picture" class="cell">
+          <!-- Image1 -->
+          <img src="C:\Users\Oli\Desktop\2023-09-26.jpg" alt="Fokus2" style="max-width: 100%;">
+          <!-- Image1 -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="capacity" class="cell">
+          <h2>Kapazitäten</h2>
+          <table style="width: 100%">
+            <tr>
+              <th style="width: 50%;">Mitarbeiter</th>
+              <th style="width: 50%;">Kapazität</th>
+            </tr>
+            <tr>
+              <td>Manuel Becker</td>
+              <td>8 Stunden</td>
+            </tr>
+            <tr>
+              <td>Dejan Cukaric</td>
+              <td>8 Stunden</td>
+            </tr>
+          </table>
+          <br>
+          <!-- SGA Mädchen 1/2 nicht verstanden -->
+          <p2>SGA 1/2 <br> </p2>
+          <p2>Mädchen</p2>
+        </div>
+        <div id="monthly" class="cell">
+          <h2>Schönster Moment November</h2>
+          <!-- Image2 -->
+          <img src="C:\Users\Oli\Desktop\KampfgeistKids.jpg" alt="Fokus2" style="max-width: 100%; height: auto">
+          <!-- Image2 -->
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
